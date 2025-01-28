@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Around The World</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <a class="logo" href="#">
+          <img src="./assets/logo.svg" alt="world icon" />
+          <span>Around The World</span>
+        </a>
+        <button class="theme-switcher">
+          <img
+            src="./assets/moon-regular-dark.svg"
+            alt="moon icon"
+            class="theme-switcher__img"
+          />
+          <span>Dark Theme</span>
+        </button>
+      </header>
+      <main class="main">
+        <section class="filter">
+          <form class="filter__form">
+            <img
+              src="./assets/search.svg"
+              alt="search icon"
+              class="filter__searchIcon"
+            />
+            <input
+              type="search"
+              class="filter__search"
+              placeholder="Search for a country..."
+            />
+          </form>
+          <select id="filter__selectMenu">
+            <option value="all region">All region</option>
+            <option value="africa">Africa</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="occeania">Occeania</option>
+          </select>
+        </section>
+        <section class="countries"></section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
