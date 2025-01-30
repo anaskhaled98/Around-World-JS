@@ -316,6 +316,15 @@ button {
       grid-template-columns: 1fr;
     }
   }
+
+  .country-page {
+    .country-page__dataContainer > div {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
 }
 
 @media (max-width: 500px) {
