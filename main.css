@@ -310,6 +310,12 @@ button {
   .countries-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .country-page {
+    .country-page__Container {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 @media (max-width: 500px) {
